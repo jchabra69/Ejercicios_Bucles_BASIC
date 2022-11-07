@@ -1,0 +1,20 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Teclado TextBox
+    MoveScaled(5,11,50,6)
+  }
+  { Button1 Button
+    MoveScaled(23,22,13,7)
+    Text = ("Calcular")
+  }
+  { Label2 Label
+    MoveScaled(5,6,53,3)
+    Text = ("Ingresa un número para calcular sus 10 primeros múltiplos")
+  }
+  { LResultado Label
+    MoveScaled(6,32,49,23)
+    Background = Color.SoftOrange
+  }
+}

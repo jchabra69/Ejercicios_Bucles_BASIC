@@ -1,0 +1,33 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,130,97)
+  { LPassword TextLabel
+    MoveScaled(30,16,34,12)
+    Text = ("Password")
+  }
+  { BAbrir Button
+    MoveScaled(36,50,13,6)
+    Text = ("Abrir")
+  }
+  { BAsignar Button
+    MoveScaled(56,50,13,6)
+    Text = ("Asignar")
+  }
+  { BSalir Button
+    MoveScaled(76,50,13,6)
+    Text = ("Salir")
+  }
+  { TBPassword TextBox
+    MoveScaled(70,15,27,10)
+  }
+  { TBNewPassword TextBox
+    MoveScaled(70,30,27,10)
+    Enabled = False
+  }
+  { TextLabel1 TextLabel
+    MoveScaled(28,67,65,10)
+    Background = Color.Pink
+    Text = ("Inicializada")
+  }
+}

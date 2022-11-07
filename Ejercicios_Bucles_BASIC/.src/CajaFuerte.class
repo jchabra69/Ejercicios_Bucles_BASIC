@@ -1,0 +1,83 @@
+' Gambas class file
+
+'Estado - Atributos // variables
+
+  Private bAbierta As Boolean 'estado = true es abierta
+  Private clave As String '
+  
+  
+'Comportamiento - Métodos // acciones
+
+Public Sub _new()
+  'Inicializar los valores
+  
+    bAbierta = False
+    Clave = "0000"
+  
+  
+End 
+
+'Resto de métodos
+
+'Asignar clave nueva
+
+'Cambia la contraseña, primero pide la antigua, si esta es cierta te deja meter la nueva.
+'Function cuando vaya a meter cosas en el paréntesis, devuelven cosas
+'Sub / void hace muchas cosas con los atributos etc, no da valores.
+
+Public Function changePassword(oldPassword As String, newPassword As String) As Boolean
+
+  If (clave = oldPassword) Then
+    clave = newPassword 
+    Return True
+
+  Endif
+  'Todo lo que no entre por el if, será falso'
+  Return False
+  
+End
+
+'Abrir la caja fuerte
+
+Public Function open(password As String) As Boolean
+  
+  'Dim resultado as Boolean
+  'resultado = false '(chuletilla para empesar)'
+  'Return resultado
+  
+  If (clave = password) Then 
+    Return True
+    bAbierta = True
+    'También se puede poner en el IF
+    Else 
+      Return False
+    
+  Endif
+  
+  
+End
+
+
+'Cerrar la caja fuerte
+
+Public Sub close()
+  
+ bAbierta = False
+  
+End
+
+'Public Function prueba() As Integer
+  
+'  Dim contador As Integer
+  
+ ' For contador = 1 To 20
+  '    If contador = 12 Then 
+   '       Return contador
+    '      Endiff
+     '     Next 
+      '    Return contador
+       '   
+      'Endif
+  'Next
+  
+'End

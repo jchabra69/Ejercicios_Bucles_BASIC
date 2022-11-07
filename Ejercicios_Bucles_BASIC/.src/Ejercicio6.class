@@ -1,0 +1,25 @@
+' Gambas class file
+
+
+Public Sub BEjecutar_Click()
+
+  Dim contador As Integer
+  
+  contador = 20
+  
+  'No sé como poner el límite de repeticiones en do-while de BASIC
+  
+  Do While (contador <= 0)
+    
+    LCuenta.Text = (LCuenta.Text & "_" & contador)
+    
+    
+  If (contador <= 0) Then 
+      
+      LResultado.Text = "Cuenta atrás completada con bucle for"
+      
+    Endif
+  
+  Loop 
+  
+End

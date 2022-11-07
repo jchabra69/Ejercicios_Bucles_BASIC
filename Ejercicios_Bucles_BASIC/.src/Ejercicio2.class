@@ -1,0 +1,23 @@
+' Gambas class file
+
+
+Public Sub Button1_Click()
+
+  Dim numero As Integer
+  Dim i As Integer
+  Dim multiplo As Integer
+  
+  multiplo = 1
+  
+  numero = Teclado.Text
+  
+  While (i <= 10)
+    
+     multiplo = numero * i
+     LResultado.Text = (LResultado.Text & multiplo)
+     
+     Inc i
+      
+  Wend
+  
+End

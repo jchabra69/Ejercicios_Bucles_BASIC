@@ -1,0 +1,22 @@
+' Gambas class file
+
+
+Private miCaja As CajaFuerte
+
+Public Sub BAbrir_Click()
+
+  'Mirar sin han puesto algo potable en el TBPassword
+  'Pasar la contraseña al objeto cajafuerte
+  'Si me devuelve True, la caja debe estar abierta
+  'En otro caso la password no va
+
+  If (miCaja.open)(TBPassword.text) Then 
+    LPassword.Text = "All Is OK.Door Is Open"
+    Else 
+      LPassword.Text = "The password is incorrect. Try again..."
+    
+  Endif
+
+End
+
+

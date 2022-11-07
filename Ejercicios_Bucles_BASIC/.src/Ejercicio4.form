@@ -1,0 +1,24 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,72,64)
+  { LCuenta Label
+    MoveScaled(4,14,59,21)
+    Background = Color.TooltipForeground
+    Foreground = Color.TextBackground
+  }
+  { BEjecutar Button
+    MoveScaled(24,45,20,6)
+    Text = ("Ejecutar")
+  }
+  { Label1 Label
+    MoveScaled(4,8,54,4)
+    Font = Font["Timmana"]
+    Text = ("Presiona el boton para ejecutar una cuenta atrás del 1 al 20")
+  }
+  { LResultado Label
+    MoveScaled(4,37,59,4)
+    Background = Color.ButtonForeground
+    Foreground = Color.TextBackground
+  }
+}

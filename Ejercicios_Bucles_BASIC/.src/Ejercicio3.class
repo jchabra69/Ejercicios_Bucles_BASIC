@@ -1,0 +1,22 @@
+' Gambas class file
+
+
+Public Sub Button1_Click()
+
+  Dim numero As Integer
+  Dim i As Integer
+  Dim multiplo As Integer
+
+  i = 1
+  
+  'No sé como poner el límite de repeticiones en do-while de BASIC
+  
+  Do While (i <= 10)
+    
+  multiplo = numero * i
+  LResultado.Text = (LResultado.Text & multiplo)    
+    
+  
+  Loop 
+  
+End

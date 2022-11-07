@@ -1,0 +1,25 @@
+' Gambas class file
+
+
+Public Sub BEjecutar_Click()
+
+  Dim contador As Integer
+  
+  
+  
+  For contador = 20 To 0 Step -1
+    
+    LCuenta.Text = (LCuenta.Text & "_" & contador)
+    
+    If (contador <= 0) Then 
+      
+      LResultado.Text = "Cuenta atrás completada con bucle for"
+      
+    Endif
+    
+    
+  Next
+
+End
+
+ 
